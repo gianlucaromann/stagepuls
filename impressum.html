@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impressum | Stagepuls</title>
+<meta name="description" content="Impressum von Stagepuls, Weinfelden.">
+<link rel="canonical" href="https://stagepuls.ch/impressum.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav__logo">Stagepuls</a>
+  <div class="nav__links">
+    <a href="index.html#leistungen" class="nav__link">Leistungen</a>
+    <a href="index.html#preise" class="nav__link">Preise</a>
+    <a href="index.html#ueber" class="nav__link">Über mich</a>
+    <button type="button" class="btn btn--primary" data-open-modal>Anfragen</button>
+  </div>
+</nav>
+
+<section class="legal">
+  <div class="legal__inner">
+    <p class="eyebrow">Rechtliches</p>
+    <h1 class="legal__title">Impressum</h1>
+    <div class="legal__blocks">
+      <div>
+        <h2>Verantwortlich für diese Website</h2>
+        <p>Stagepuls<br>Gian-Luca Romann<br>Einzelunternehmen<br>8570 Weinfelden, Schweiz</p>
+      </div>
+      <div>
+        <h2>Kontakt</h2>
+        <p>info@stagepuls.ch<br>+41 79 000 00 00</p>
+      </div>
+      <div>
+        <h2>Handelsregister und MWST</h2>
+        <p>Einzelunternehmen nach schweizerischem Recht. UID beziehungsweise MWST-Nummer wird nach Eintrag hier ergänzt.</p>
+      </div>
+      <div>
+        <h2>Haftungsausschluss</h2>
+        <p>Die Inhalte dieser Website werden mit Sorgfalt erstellt. Für Richtigkeit, Vollständigkeit und Aktualität — insbesondere bei Preis- und Verfügbarkeitsangaben — wird keine Haftung übernommen. Verbindlich ist ausschliesslich die schriftliche Offerte. Für Inhalte verlinkter externer Websites sind deren Betreiber verantwortlich.</p>
+      </div>
+      <div>
+        <h2>Urheberrecht</h2>
+        <p>Alle Texte, Bilder und Grafiken auf dieser Website sind urheberrechtlich geschützt. Eine Verwendung ausserhalb der gesetzlichen Schranken bedarf der schriftlichen Zustimmung.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div>
+      <p class="footer__brand">Stagepuls</p>
+      <p class="footer__tagline">Damit Ihre Stage lebt.</p>
+      <div class="footer__meta">
+        <p>info@stagepuls.ch</p>
+        <p>+41 79 000 00 00</p>
+        <p>8570 Weinfelden, Thurgau</p>
+      </div>
+      <p class="footer__copy">© 2026 Stagepuls. Alle Rechte vorbehalten.</p>
+    </div>
+    <div class="footer__cols">
+      <div class="footer__col">
+        <p class="footer__col-title">Navigation</p>
+        <a href="index.html#leistungen">Leistungen</a>
+        <a href="index.html#preise">Preise</a>
+        <a href="index.html#ablauf">Ablauf</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__col-title">Rechtliches</p>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="anfrage-modal" class="modal-overlay" data-close-modal>
+  <div class="modal">
+    <button type="button" class="modal__close" data-close-modal aria-label="Schliessen">×</button>
+    <p class="modal__eyebrow">Anfrage</p>
+    <h3 class="modal__title">Reden wir über<br>Ihren Anlass.</h3>
+    <form action="https://formsubmit.co/info@stagepuls.ch" method="POST" class="form">
+      <div class="field">
+        <label for="modal-name">Name *</label>
+        <input type="text" id="modal-name" name="name" placeholder="Max Muster" required>
+      </div>
+      <div class="field">
+        <label for="modal-email">E-Mail *</label>
+        <input type="email" id="modal-email" name="email" placeholder="name@beispiel.ch" required>
+      </div>
+      <div class="field">
+        <label for="modal-anfrage">Art der Anfrage</label>
+        <select id="modal-anfrage" name="anfrage">
+          <option value="">Bitte wählen …</option>
+          <option value="ton">Tonanlage</option>
+          <option value="licht">Lichttechnik</option>
+          <option value="tonlicht">Ton und Licht</option>
+          <option value="dj">DJ für den Abend</option>
+          <option value="paket-klein">Paket Klein und stimmig</option>
+          <option value="paket-abend">Paket Der ganze Abend</option>
+          <option value="paket-buehne">Paket Grosse Stage</option>
+          <option value="beratung">Allgemeine Anfrage</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="modal-datum">Datum des Anlasses</label>
+        <input type="date" id="modal-datum" name="datum">
+      </div>
+      <div class="field">
+        <label for="modal-nachricht">Nachricht *</label>
+        <textarea id="modal-nachricht" name="nachricht" placeholder="Ort, Gästezahl, Lieferung gewünscht?" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn--submit">Nachricht senden →</button>
+    </form>
+  </div>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
