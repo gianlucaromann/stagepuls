@@ -24,4 +24,4 @@ Danach `http://localhost:8000` öffnen.
 
 ## Kontaktformular
 
-Die Formulare senden per POST an [formsubmit.co](https://formsubmit.co/) an `info@stagepuls.ch`.
+Die Formulare senden per POST an [formsubmit.co](https://formsubmit.co/) an `gl.romann@gmx.ch`.
